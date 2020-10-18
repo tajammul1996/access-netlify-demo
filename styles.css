@@ -1,0 +1,68 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+}
+
+.main {
+    height: 100vh;
+    background-color: antiquewhite;
+    
+}
+
+.intro {
+    height: 50%;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.intro p {
+    padding: 50px 0 0 50px;
+}
+
+.description {
+    height: 50%;
+    padding: 50px;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+
+/* 
+Break points
+
+768  - Tablet
+1024 - PCs
+
+*/
+
+@media (min-width: 768px) {
+    .intro {
+        background-color: antiquewhite;
+        font-size: 3.5rem;
+        color: black;
+    }
+
+    .description {
+        background-color: black;
+        color: antiquewhite;
+        font-size: 2.5rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .intro ,
+    .description {
+        float: left;
+        height: 100vh;
+        width: 50vw;
+    }
+}
